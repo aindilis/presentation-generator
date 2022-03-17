@@ -1,0 +1,11 @@
+[% FOREACH item IN items %]
+    <section[%- IF item.Duration -%] data-autoslide="[%- item.Duration -%]"[%- END -%]>
+[% item.Content %]
+[% IF item.AudioFile %]
+<audio data-autoplay>
+    <source src="[%- item.AudioFile -%]" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+[% END %]
+</section>
+[% END %]

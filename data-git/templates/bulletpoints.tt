@@ -1,0 +1,6 @@
+[% FOREACH bulletpoint IN bulletpoints %]
+<p>
+    [% bulletpoint %]
+
+</p>
+[% END %]

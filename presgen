@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+
+use PresGen;
+
+use UniLang::Agent::Agent;
+use UniLang::Util::Message;
+
+$UNIVERSAL::agent = UniLang::Agent::Agent->new
+  (Name => "PresGen",
+   ReceiveHandler => \&Receive);
+$UNIVERSAL::presgen = PresGen->new();
+
+sub Receive {
+  my %args = @_;
+  $UNIVERSAL::presgen->ProcessMessage
+    (Message => $args{Message});
+}
+
+$UNIVERSAL::presgen->Execute();

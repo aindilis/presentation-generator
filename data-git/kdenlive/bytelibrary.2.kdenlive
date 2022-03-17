@@ -1,0 +1,145 @@
+<mlt LC_NUMERIC="en_US.UTF-8" producer="main_bin" title="Kdenlive imported timeline" version="6.16.0">
+<profile colorspace="709" description="HD 1080p 29.97002997 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1001" frame_rate_num="30000" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
+<producer id="producer0" in="0:00:00" out="0:00:03.903900">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/Videos/capture0016.wav</property>
+</producer>
+<producer id="producer1" in="0:00:00" out="0:00:04.604600">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/Videos/capture0019.wav</property>
+</producer>
+<producer id="producer2" in="0:00:00" out="0:00:04.337667">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/Videos/capture0022.wav</property>
+</producer>
+<producer id="producer3" in="0:00:00" out="0:00:14.280933">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/Videos/capture0031.wav</property>
+</producer>
+<producer id="producer4" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-32-32-2-clipped.ppm</property>
+</producer>
+<producer id="producer5" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-32-42-2-clipped.ppm</property>
+</producer>
+<producer id="producer6" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-34-07-2-clipped.ppm</property>
+</producer>
+<producer id="producer7" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-34-53-2-clipped.ppm</property>
+</producer>
+<producer id="producer8" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-35-17-2-clipped.ppm</property>
+</producer>
+<producer id="producer9" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-35-30-2-clipped.ppm</property>
+</producer>
+<producer id="producer10" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-36-38-2-clipped.ppm</property>
+</producer>
+<producer id="producer11" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-37-13-2-clipped.ppm</property>
+</producer>
+<producer id="producer12" in="0:00:00" out="0:00:04.971633">
+<property name="mlt_service">avformat</property>
+<property name="resource">/home/andrewdo/video/resources/images/bytelibrary-screenshots/Screenshot from 2018-08-12 13-37-22-2-clipped.ppm</property>
+</producer>
+<producer id="unsupported" in="0" out="10000">
+<property name="mlt_service">qtext</property>
+<property name="family">Courier</property>
+<property name="fgcolour">#ff808080</property>
+<property name="bgcolour">#00000000</property>
+<property name="text">Unsupported clip type</property>
+</producer>
+<playlist id="main_bin">
+<property name="kdenlive:docproperties.decimalPoint">.</property>
+<property name="kdenlive:docproperties.version">0.98</property>
+<property name="xml_retain">1</property>
+<entry producer="producer0" />
+<entry producer="producer1" />
+<entry producer="producer2" />
+<entry producer="producer3" />
+<entry producer="producer4" />
+<entry producer="producer5" />
+<entry producer="producer6" />
+<entry producer="producer7" />
+<entry producer="producer8" />
+<entry producer="producer9" />
+<entry producer="producer10" />
+<entry producer="producer11" />
+<entry producer="producer12" />
+<entry producer="unsupported" />
+</playlist>
+<producer id="black_track">
+<property name="resource">black</property>
+<property name="mlt_service">color</property>
+</producer>
+<playlist id="playlist1_1">
+<property name="kdenlive:audio_track">1</property>
+<entry in="0:00:00" out="0:00:03.903900" producer="producer0" />
+<blank length="0:00:00.133467" />
+<entry in="0:00:00" out="0:00:04.604600" producer="producer1" />
+<entry in="0:00:00" out="0:00:04.337667" producer="producer2" />
+<entry in="0:00:00" out="0:00:14.280933" producer="producer3" />
+</playlist>
+<playlist id="playlist1_2">
+<property name="kdenlive:audio_track">1</property>
+</playlist>
+<tractor id="tractor1">
+<property name="kdenlive:track_name" />
+<track hide="video" producer="playlist1_1" />
+<track hide="video" producer="playlist1_2" />
+<property name="kdenlive:audio_track">1</property>
+</tractor>
+<playlist id="playlist2_1">
+<property name="kdenlive:audio_track">1</property>
+</playlist>
+<playlist id="playlist2_2">
+<property name="kdenlive:audio_track">1</property>
+</playlist>
+<tractor id="tractor2">
+<property name="kdenlive:track_name" />
+<track hide="video" producer="playlist2_1" />
+<track hide="video" producer="playlist2_2" />
+<property name="kdenlive:audio_track">1</property>
+</tractor>
+<playlist id="playlist3_1">
+<entry in="0:00:00" out="0:00:03.903900" producer="producer4" />
+<entry in="0:00:00" out="0:00:01.234567" producer="producer5" />
+<entry in="0:00:00" out="0:00:01.267933" producer="producer6" />
+<entry in="0:00:00" out="0:00:02.168833" producer="producer7" />
+<entry in="0:00:00" out="0:00:02.068733" producer="producer8" />
+<entry in="0:00:00" out="0:00:02.235567" producer="producer9" />
+<entry in="0:00:00" out="0:00:04.270933" producer="producer10" />
+<entry in="0:00:00" out="0:00:04.971633" producer="producer11" />
+<entry in="0:00:00" out="0:00:04.971633" producer="producer12" />
+</playlist>
+<playlist id="playlist3_2" />
+<tractor id="tractor3">
+<property name="kdenlive:track_name" />
+<track hide="audio" producer="playlist3_1" />
+<track hide="audio" producer="playlist3_2" />
+</tractor>
+<playlist id="playlist4_1" />
+<playlist id="playlist4_2" />
+<tractor id="tractor4">
+<property name="kdenlive:track_name" />
+<track hide="audio" producer="playlist4_1" />
+<track hide="audio" producer="playlist4_2" />
+</tractor>
+<tractor global_feed="1">
+<track producer="black_track" />
+<track producer="tractor1" />
+<track producer="tractor2" />
+<track producer="tractor3" />
+<track producer="tractor4" />
+</tractor>
+</mlt>

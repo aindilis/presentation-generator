@@ -1,0 +1,5 @@
+[% FOREACH item IN items %]
+    <section[%- FOREACH key IN item.SectionArgs.keys %] [% key -%]="[%- item.SectionArgs.item(key) -%]"[%- END -%]>
+[% item.Content %]
+</section>
+[% END %]
